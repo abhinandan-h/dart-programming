@@ -39,6 +39,7 @@ void main(List<String> args) {
   // Dart lists are similar to javascript lists. They use zero based indexing.
   // spread operator (...) and null aware spread operator (...?)
   collectiveForFunction();
+  createMapDart();
 }
 
 collectiveForFunction() {
@@ -53,4 +54,15 @@ collectiveForFunction() {
   // set is unordered collection of unique items
   var newSet = <String>{};
   newSet.add('me');
+}
+
+createMapDart() {
+  // creating maps is similar to how we create maps in javascript
+  var newMap = {
+    'first': 'one',
+    'second': 'two',
+    'third': 'three'
+  };
+  //accessing maps is also similar to javascript
+  print(newMap['first']);
 }
